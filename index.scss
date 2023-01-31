@@ -1,0 +1,410 @@
+* {
+    font-family: Sen;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    //styleName: Body 1;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin: 0;
+
+}
+
+.content {
+    background: rgb(238, 238, 238);
+    background: radial-gradient(circle, rgba(238, 238, 238, 1) 0%, rgba(223, 223, 223, 1) 100%);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-family: Sen;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -2px;
+    text-align: left;
+    margin: 0;
+}
+
+h1 {
+    font-family: Sen;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -2px;
+    text-align: left;
+
+
+}
+
+h3 {
+    font-family: Sen;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -1px;
+    text-align: left;
+
+}
+
+h4 {
+    font-family: Sen;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+h6 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+p {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+
+.container {
+    max-width: 1280px;
+    outline: 1p solid red;
+    margin: 0 auto;
+}
+
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    background: #232536;
+
+    &Left {
+        margin-left: 83px;
+        color: #FFFFFF;
+        margin-top: 30;
+    }
+
+    &Right {
+        display: flex;
+    }
+
+    &Nav {
+        margin-left: 24px;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0px;
+        text-align: left;
+        transition: 0.5s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &Li {
+        display: flex;
+        align-items: center;
+
+    }
+}
+
+.butSub {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 48px;
+    gap: 12px;
+
+    width: 179px;
+    height: 56px;
+    margin: 0 128px 0 32px;
+    background: #FFFFFF;
+
+    &Text {
+        font-family: Sen;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+}
+
+.banner {
+
+    height: 720px;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)),
+        url(img/banner.png);
+
+    &Text {
+        width: 810px;
+        margin-left: 81px;
+
+        &Str {
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 20px;
+            letter-spacing: 3px;
+            text-align: left;
+            color: #FFFFFF;
+        }
+
+        &One {
+            margin-top: 128px;
+            color: #FFFFFF;
+        }
+
+        &Two {
+            margin-top: 28px;
+            color: #FFFFFF;
+
+        }
+
+        &Three {
+            margin-top: 24px;
+            color: #FFFFFF;
+
+        }
+
+        &Four {
+            margin: 16px 0 48px 0;
+            color: #FFFFFF;
+
+        }
+
+        &Name {
+            color: #FFD050;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 0px;
+            text-align: left;
+
+        }
+    }
+}
+
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 204px;
+    height: 56px;
+    left: 80px;
+    top: 552px;
+    border-color: #3e3e4400;
+    background: #FFD050;
+    transition: background 0.5s ease;
+
+    &:hover {
+        background: #e7b017;
+    }
+
+    &Text {
+        font-family: Sen;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: left;
+
+    }
+}
+
+.posts {
+    margin-top: 128px;
+}
+
+.featuredPost {
+    width: 680px;
+
+    &Title {
+
+        margin-bottom: 64px;
+    }
+
+    &Author {
+        margin: 32px 0 16px 0;
+    }
+
+    &Text {
+        margin-bottom: 32px;
+    }
+}
+
+.labelOne {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: Purple;
+
+}
+
+
+
+.allPosts {
+    width: 517px;
+    height: 100%;
+
+    &Head {
+        height: 48px;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        margin-bottom: 64px;
+    }
+
+}
+
+.postCard {
+    padding-top: 32px;
+
+    &:first-child {
+        padding: 0;
+    }
+
+}
+
+.bar {
+    margin-top: 130px;
+
+    &Wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    &Frst {
+
+        width: 843px;
+        height: 23px;
+        background: #FFD050;
+    }
+
+    &Scnd {
+        width: 282px;
+        height: 23px;
+        background: #592EA9;
+
+    }
+}
+
+.page {
+    &Info {
+        margin-top: 98px;
+    }
+
+    &Title {
+
+
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 3px;
+        text-align: left;
+    }
+}
+
+
+
+
+.ourMision {
+    margin-left: 82px;
+    margin-top: -70px;
+}
+
+.cat {
+    margin-top: 128px;
+
+    &Marg {
+        margin-bottom: 48px;
+    }
+}
+
+.tab {
+    width: 296px;
+    background: #f8f8f8;
+    padding-left: 32px;
+    border: 1px solid #d8d8d8;
+    margin-left: 32px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &Icon {
+        margin: 44px 0 16px 0;
+        background: #FFFFFF;
+        border-radius: 20px;
+    }
+
+    &Name {
+        margin-bottom: 4px;
+    }
+
+    &Text {
+        margin-bottom: 32px;
+    }
+
+    &Shattle {
+        border-radius: 20px;
+    }
+
+    &:hover {
+        transition: background 0.6s ease;
+        background: #FFD050;
+        transform: scale(1.01);
+
+    }
+}
