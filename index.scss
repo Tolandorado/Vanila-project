@@ -408,3 +408,9 @@ p {
 
     }
 }
+
+.about {
+    &Img {
+        background-image: url(img/aboutPhoto.png);
+    }
+}

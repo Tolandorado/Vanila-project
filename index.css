@@ -337,4 +337,8 @@ p {
   transition: background 0.6s ease;
   background: #FFD050;
   transform: scale(1.01);
+}
+
+.aboutImg {
+  background-image: url(img/aboutPhoto.png);
 }/*# sourceMappingURL=index.css.map */
