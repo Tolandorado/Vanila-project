@@ -5,6 +5,7 @@
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 body {
@@ -20,8 +21,8 @@ body {
 }
 
 .content {
-    background: rgb(238, 238, 238);
-    background: radial-gradient(circle, rgba(238, 238, 238, 1) 0%, rgba(223, 223, 223, 1) 100%);
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(238, 238, 238, 1) 100%);
 }
 
 .center {
@@ -47,8 +48,6 @@ h1 {
     line-height: 64px;
     letter-spacing: -2px;
     text-align: left;
-
-
 }
 
 h3 {
@@ -58,7 +57,6 @@ h3 {
     line-height: 40px;
     letter-spacing: -1px;
     text-align: left;
-
 }
 
 h4 {
@@ -77,7 +75,16 @@ h6 {
     line-height: 28px;
     letter-spacing: 0px;
     text-align: left;
+}
 
+h5 {
+    //styleName: Heading H5;
+    font-family: Sen;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
 }
 
 p {
@@ -87,9 +94,7 @@ p {
     line-height: 28px;
     letter-spacing: 0px;
     text-align: left;
-
 }
-
 
 .container {
     max-width: 1280px;
@@ -340,8 +345,11 @@ p {
 }
 
 .page {
+
+
     &Info {
         margin-top: 98px;
+
     }
 
     &Title {
@@ -354,10 +362,11 @@ p {
         letter-spacing: 3px;
         text-align: left;
     }
+
+    &A {
+        margin-top: 16px;
+    }
 }
-
-
-
 
 .ourMision {
     margin-left: 82px;
@@ -366,6 +375,8 @@ p {
 
 .cat {
     margin-top: 128px;
+    margin-bottom: 128px;
+
 
     &Marg {
         margin-bottom: 48px;
@@ -410,7 +421,69 @@ p {
 }
 
 .about {
-    &Img {
-        background-image: url(img/aboutPhoto.png);
+    &Pos {
+        position: relative;
     }
+
+    &Content {
+        position: absolute;
+        height: 585px;
+        width: 705px;
+        background-color: #fcf2f2;
+        right: -330px;
+        top: 120px;
+        padding: 0 0 0 80px;
+    }
+
+    &Preview {
+        position: relative;
+    }
+
+    &Title {
+        margin-bottom: 24px;
+    }
+
+    &Btn {
+        font-size: 16px;
+    }
+}
+
+.pTitle {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-align: left;
+    margin: 80px 0 24px 0;
+
+}
+
+.pText {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+.authlist {
+    margin-top: 128px;
+
+    &Card {
+        height: 324px;
+        width: 296px;
+    }
+
+    &Photo {
+        margin: 40px 84px 20px 84px;
+    }
+
+    &Social {
+        margin: 20px 0 40px 0;
+        gap: 1rem;
+    }
+
 }
